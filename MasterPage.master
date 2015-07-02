@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head runat="server">
+        <title></title>
+        <asp:ContentPlaceHolder id="head" runat="server">
+        <link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css" />
+        </asp:ContentPlaceHolder>
+        </head>
+  
+        <body>
+        <form id="form1" runat="server">
+        <div class="mainlogo"> <div class="slogo"></div><div class="heading">Easy File Sharing
+   <%-- <asp:LinkButton ID="btnLogin" runat="server" ForeColor="White">Login</asp:LinkButton>--%>&nbsp;&nbsp; 
+    </div></div>
+        <div class="main">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+          <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        </asp:ContentPlaceHolder>
+        </div>
+        </form>
+        </body>
+        </html>
